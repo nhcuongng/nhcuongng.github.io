@@ -91,7 +91,7 @@
   <span class="token property">"id"</span><span class="token operator">:</span> <span class="token string">"1"</span><span class="token punctuation">,</span>
   <span class="token property">"firstname"</span><span class="token operator">:</span> <span class="token string">"Cuong"</span><span class="token punctuation">,</span>
   <span class="token property">"lastname"</span><span class="token operator">:</span> <span class="token string">"Nguyen Huu"</span><span class="token punctuation">,</span>
-  <span class="token property">"emailAddress"</span><span class="token operator">:</span> <span class="token string">"cuong.nguyenhuu1997@gmail.com"</span><span class="token punctuation">,</span>
+  <span class="token property">"emailAddress"</span><span class="token operator">:</span> <span class="token string">"cuong email"</span><span class="token punctuation">,</span>
   <span class="token property">"phoneNumber"</span><span class="token operator">:</span> <span class="token string">"0973323842"</span><span class="token punctuation">,</span>
   <span class="token property">"gender"</span><span class="token operator">:</span> <span class="token string">"1"</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span></code></pre></div>
@@ -100,8 +100,8 @@
 <p>We will use the <strong>class-validator</strong> to validate the object!</p>
 <p>Firstly, we install the needed libraries:</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="command-line-prompt"><span data-user=root data-host=localhost></span></span><span class="token function">yarn</span> <span class="token function">add</span> class-validator class-tranfomer</code></pre></div>
-<p><strong>class-tranformer</strong> will convert the literal to the class oject, <a href="https://github.com/typestack/class-transformer">read more in the docs</a>.</p>
-<p>Writing the DTO (data tranfer object):</p>
+<p><strong>class-tranformer</strong> will convert the literal to the class object, <a href="https://github.com/typestack/class-transformer">read more in the docs</a>.</p>
+<p>Writing the DTO (Data Tranfer Object):</p>
 <div class="gatsby-highlight" data-language="ts"><pre class="language-ts"><code class="language-ts"><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">EmployeeDTO</span> <span class="token keyword">implements</span> <span class="token class-name">Employee</span> <span class="token punctuation">{</span>
   @<span class="token function">IsEmail</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
   emailAddress<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span>
